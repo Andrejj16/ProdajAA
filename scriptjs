@@ -1,0 +1,19 @@
+// script.js
+
+// Funkcija za dodavanje proizvoda u korpu
+function dodajUKorpu(nazivProizvoda, cenaProizvoda) {
+    // Ovde možete dodati logiku za dodavanje proizvoda u korpu
+    console.log("Dodat proizvod '" + nazivProizvoda + "' u korpu za " + cenaProizvoda + "$");
+}
+
+// Selektujemo sve dugmad "Dodaj u korpu"
+var dugmadDodajUKorpu = document.querySelectorAll('.product-card button');
+
+// Iteriramo kroz svako dugme i dodajemo event listener
+dugmadDodajUKorpu.forEach(function(dugme) {
+    dugme.addEventListener('click', function() {
+        var nazivProizvoda = this.parentNode.querySelector('h3').textContent;
+        var cenaProizvoda = this.parentNode.querySelector('p').textContent.split(": ")[1];
+        dodajUKorpu(nazivProizvoda, cenaProizvoda);
+    });
+});
