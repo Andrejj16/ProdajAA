@@ -1,0 +1,21 @@
+<!-- Unutar sekcije .featured-products -->
+<div class="product-card">
+    <img src="patike.jpg" alt="Nike patike">
+    <h3>Nike Air Max</h3>
+    <p>Cena: $169</p>
+    <button>Dodaj u korpu</button>
+</div>
+
+<div class="product-card">
+    <img src="kosulja.jpg" alt="Lacoste košulja">
+    <h3>Lacoste Slim Fit Košulja</h3>
+    <p>Cena: $109</p>
+    <button>Dodaj u korpu</button>
+</div>
+
+<div class="product-card">
+    <img src="duks.jpg" alt="Jordan dukserica">
+    <h3>Jordan Jumpman Dukserica</h3>
+    <p>Cena: $100</p>
+    <button>Dodaj u korpu</button>
+</div>
